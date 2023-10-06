@@ -44,21 +44,25 @@ virtualenv -v python3.x venv
 
 ```
 pip install -r requierments.txt
-```shell
+
+```
 
 4. Run app:
 
 
 ```
 uvicorn main:app --reload --host 0.0.0.0 --port 8000
+
 ```
 
 ### Installing and configure postgress section
 
 #### install 
+
 ```
 sudo apt install postgresql
 ```
+
 #### Configure
 
 ```
@@ -66,9 +70,13 @@ sudo apt install postgresql
 sudo su postgres
 
 # enter DB
+
+```
 psql
 
-# create user
+```
+
+#### create user
 create user your-user with encrypted password 'your-password';
 
 # grant perrmisions 
